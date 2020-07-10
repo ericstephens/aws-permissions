@@ -1,0 +1,35 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "rds:RestoreDBClusterFromSnapshot",
+                "rds:DescribeDBSnapshots",
+                "rds:CopyDBSnapshot",
+                "ec2:DescribeRegions",
+                "rds:CopyDBClusterSnapshot",
+                "rds:DeleteDBSnapshot",
+                "ec2:DescribeSecurityGroups",
+                "rds:DeleteDBClusterSnapshot",
+                "ec2:DescribeAvailabilityZones",
+                "rds:CreateDBSnapshot",
+                "rds:RestoreDBInstanceFromDBSnapshot",
+                "ec2:DescribeVpcs",
+                "rds:CreateDBInstance",
+                "rds:DescribeDBClusterSnapshots",
+                "rds:DescribeDBInstances",
+                "ec2:DescribeAccountAttributes",
+                "rds:CreateDBClusterSnapshot",
+                "ec2:DescribeSubnets",
+                "rds:DescribeDBClusters",
+                "rds:DeleteDBInstance",
+                "iam:GetUser",
+                "iam:GetAccountAuthorizationDetails",
+                "rds:ModifyDBSnapshotAttribute"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Stmt1490385696805",
+            "Action": [
+                "s3:CreateBucket",
+                "s3:GetBucketLocation",
+                "s3:GetObject",
+                "s3:PutObject",
+				"s3:PutObjectRetention",
+				"s3:PutObjectTagging",
+				"s3:ListBucket",
+				"s3:ListAllMyBuckets",
+                "s3:DeleteObject"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
+        }
+    ]
+}

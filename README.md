@@ -1,7 +1,7 @@
 # Commvault AWS Permissions
 
 ## Overview
-This repo contains individual JSON files for Amazon Web Services (AWS) IAM user permissions that are required for specific cloud operations with Commvault.
+JSON files for Amazon Web Services (AWS) IAM user permissions are present in this repository for performing certain cloud operations with Commvault.
 
 The following backup solutions are supported by commvault platform and the required permissions are covered in this package:
 
@@ -17,7 +17,7 @@ The following backup solutions are supported by commvault platform and the requi
 * amazon_vmimport_trust_policy 					:trust policy for vmimport role
 
 Prior to any conversion operations that use the import method, you must enable the VM Import Service role (vmimport) on the Amazon Web Services account and associate that role to the user account that is used to perform conversion operations.  
-### Creating a vmimport role:
+#### Creating a vmimport role:
 	From the AWS command line, use the create-role command to create a role named vmimport and to give VM import and VM export operations access to the role. Specify the full path to the location of the amazon_vmimport_trust_policy.json file, and add file:// before the path (for example, file://C:\trust-policy.json as shown in the following command):  
 		aws iam create-role --role-name vmimport --assume-role-policy-document file://C:\amazon_vmimport_trust_policy.json
 	From the AWS command line, use the put-role-policy command to attach the policy to the vmimport role. Specify the full path to the location of the amazon_vmimport_role_policy.json file.  
